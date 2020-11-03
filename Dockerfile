@@ -1,10 +1,10 @@
 FROM node:8
 
-COPY . . 
+COPY . .
 
 RUN npm install \
-    && npm run build
+	&& npm run build
 	
 EXPOSE 3000
 
-ENTRYPOINT npm run start	
+ENTRYPOINT npm run start
